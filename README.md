@@ -4,7 +4,7 @@
       <source media="(prefers-color-scheme: dark)" srcset="https://thia.vercel.app/logo/thia-icon.svg">
       <img src="https://thia.vercel.app/logo/thia-icon.svg" height="128">
     </picture>
-    <h1 align="center">Thia AI</h1>
+    <a href="https://thia.vercel.app/"><h1 align="center">Thia AI</h1></a>
   </a>
 </p>
 

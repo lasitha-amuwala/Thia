@@ -7,11 +7,12 @@ import { Summary } from '@/components/pricing/Summary';
 import { Comparison } from '@/components/pricing/Comparison';
 import { MdArrowDownward } from 'react-icons/md';
 import { SeoPage } from '@/components/seo/SeoPage';
+import mockSubsciptionData from 'mockSubscriptionPlans.json';
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
-    apiVersion: '2020-08-27',
-    typescript: true,
-});
+// const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
+//     apiVersion: '2020-08-27',
+//     typescript: true,
+// });
 
 const Pricing: NextPage = ({ plans }: any) => {
     return (
@@ -49,15 +50,22 @@ const Pricing: NextPage = ({ plans }: any) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async () => {
-    const products = await stripe.products.list({ active: true });
-    const getPriceObj = (id: any) => stripe.prices.retrieve(id);
-    const plans = await Promise.all(
-        products.data
-            .filter((_: Stripe.Product) => _.metadata.type === 'subscription_package')
-            .sort((a, b) => parseInt(a.metadata.tier) - parseInt(b.metadata.tier))
-            .map(async obj => ({ ...obj, price: await getPriceObj(obj.default_price) }))
-    );
-    return { props: { plans } };
+    // const products = await stripe.products.list({ active: true });
+    // const getPriceObj = (id: any) => stripe.prices.retrieve(id);
+    // const plans = await Promise.all(
+    //     products.data
+    //         .filter((_: Stripe.Product) => _.metadata.type === 'subscription_package')
+    //         .sort((a, b) => parseInt(a.metadata.tier) - parseInt(b.metadata.tier))
+    //         .map(async obj => ({ ...obj, price: await getPriceObj(obj.default_price) }))
+    // );
+
+    // return { props: { plans } };
+
+    return {
+        props: {
+            plans: mockSubsciptionData,
+        },
+    };
 };
 
 export default Pricing;

@@ -1,0 +1,71 @@
+[
+    {
+        "name": "Freemium",
+        "metadata": {
+            "num_models": "1",
+            "num_datasets": "1",
+            "num_exports": "2",
+            "num_classes": "5",
+            "num_images": "100",
+            "image_classification": "Yes",
+            "testing": "Basic",
+            "training": "Basic",
+            "object_detection": "Unavailable",
+            "lite_exports": "Unavailable",
+            "optimized_exports": "Unavailable",
+            "model_deployments": "Unavailable",
+            "remote_gpu_training": "Unavailable",
+            "cloud_model_backups": "Unavailable"
+        },
+        "description": "Get started for free with essential features and limited usage—perfect for trying out the platform with no commitment.",
+        "price": {
+            "unit_amount": 0
+        }
+    },
+    {
+        "name": "Standard",
+        "metadata": {
+            "num_models": "10",
+            "num_datasets": "10",
+            "num_exports": "20",
+            "num_classes": "50",
+            "num_images": "5,000",
+            "image_classification": "Yes",
+            "testing": "Standard",
+            "training": "Standard",
+            "object_detection": "Coming soon",
+            "lite_exports": "Coming soon",
+            "optimized_exports": "Coming soon",
+            "model_deployments": "Coming soon",
+            "remote_gpu_training": "Coming in the near future",
+            "cloud_model_backups": "Coming in the future"
+        },
+        "description": "Upgrade to Standard for increased limits, extra tools, and priority support—ideal for regular users or small teams.",
+        "price": {
+            "unit_amount": 1000
+        }
+    },
+    {
+        "name": "Ultimate",
+        "metadata": {
+            "num_models": "Unlimited",
+            "num_datasets": "Unlimited",
+            "num_exports": "Unlimited",
+            "num_classes": "Unlimited",
+            "num_images": "Unlimited",
+            "image_classification": "Yes",
+            "testing": "Advanced",
+            "training": "Advanced",
+            "object_detection": "Coming soon",
+            "lite_exports": "Coming soon",
+            "optimized_exports": "Coming soon",
+            "model_deployments": "Coming soon",
+            "remote_gpu_training": "Coming in the near future",
+            "cloud_model_backups": "Coming in the future"
+        },
+        "description": "Unlock the full power of the platform with unlimited access, advanced features, and dedicated support tailored for professionals.",
+        "price": {
+            "unit_amount": 3500
+        }
+    }
+]
